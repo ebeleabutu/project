@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./syntax.css">
+    <title>ncdc-form</title>
+</head>
+<body>
+    
+
+    <section class="section-center">
+        <p id="record">Record Deleted</p>
+        <p id="details">Details Updated</p>
+        <p id="alert">patients details added successfully!!!</p>
+
+        <form class="input-form"><br>
+
+            <div>
+              <label>  FIRST-NAME :</label > <input type="text" required id="first-name" placeholder="first name" />
+            </div><br>
+            <div>
+             <label for="">  LAST-NAME : </label> <input type="text" required id="last-name" placeholder="last name"/>
+            </div><br>
+            <div>
+               <label for=""> EMAIL ADDRESS : </label>
+               <input placeholder=" Email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required id="email">
+            </div><br>
+            <div class="gender-form">
+                <label for="">GENDER: </label>
+                <select required id="gender">
+                    <option value="">select for gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div><br>
+            <div class="travel form checkbox">
+                <input type="checkbox">recently came into nigeria within the last 14days?
+            </div><br>
+
+            <div class="submit form ">
+                <input type="submit" value="submit" id="submit">
+            </div>
+        </form>
+        <!--records-->
+
+
+
+        <table class="list" id="output-tab">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Came to nigeria withen the last 14days</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-body">
+
+            </tbody>
+        </table>
+
+
+    </section>
+
+    <script type="text/javascript" src="./files.js"></script>
+
+
+</body>
+
+</html>
+    
+</body>
+</html>
